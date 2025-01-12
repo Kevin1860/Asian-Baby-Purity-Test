@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian Baby Purity Test</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        h4, p {
+            text-align: center;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%; /* Ensures responsiveness */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Check if the score is already stored in localStorage
+        if (localStorage.getItem('score')) {
+            const score = localStorage.getItem('score');
+            document.body.innerHTML = `
+                <img src="file:///C:/Users/kevin/Downloads/thresherOfficial.png" alt="Score Image">
+                <h1>Your Score:<br></br></h1>
+                <h1 style="color: red;">${score}</h1>
+            `;
+            localStorage.removeItem('score');
+        } else {
+            // If no score exists, display the quiz
+            document.body.innerHTML = `
+                <div class="quiz-container">
+                    <img src="file:///C:/Users/kevin/Downloads/thresherOfficial.png" alt="Header Image">
+                    <h4>The Purity Test has historically served as a segue from O-week to true college life at Rice.
+                    It's a voluntary opportunity for O-week groups to bond, and for students to track the maturation
+                    of their experiences throughout college. <br></br>
+                    <b>Caution:</b> This is not a checklist for becoming the ultimate ABB/ABG. Attempting to complete every item might result in serious financial damage, extreme bubble tea consumption, and an overload of Instagram selfies. Proceed responsibly!</h4>
+                    <p>Click on every item you have done.</p>
+                    <form id="quiz-form">
+                        <ol>
+                            <li><label><input type="checkbox" value="1"> Have you ever been to Seaside Bakery?</label></li>
+                            <li><label><input type="checkbox" value="1"> Been to Seaside Bakery past 12 AM?</label></li>
+                            <li><label><input type="checkbox" value="1"> Drank boba more than two times in a day?</label></li>
+                            <li><label><input type="checkbox" value="1"> Played League of Legends?</label></li>
+                            <li><label><input type="checkbox" value="1"> Played Valorant?</label></li>
+                            <li><label><input type="checkbox" value="1"> Played TFT?</label></li>
+                            <li><label><input type="checkbox" value="1"> Duo-queued with an MPS?</label></li>
+                            <li><label><input type="checkbox" value="1"> Attended UCI or UCR?</label></li>
+                            <li><label><input type="checkbox" value="1"> Consumed Soju or Hennessy?</label></li>
+                            <li><label><input type="checkbox" value="1"> From Orange County?</label></li>
+                            <li><label><input type="checkbox" value="1"> From Southern California?</label></li>
+                            <li><label><input type="checkbox" value="1"> Ever had your hair permed or had highlights?</label></li>
+                            <li><label><input type="checkbox" value="1"> Dyed your hair blonde?</label></li>
+                            <li><label><input type="checkbox" value="1"> Dyed your hair an unnatural color?</label></li>
+                            <li><label><input type="checkbox" value="1"> Ever driven or owned a Lexus?</label></li>
+                            <li><label><input type="checkbox" value="1"> Have tattoos?</label></li>
+                            <li><label><input type="checkbox" value="1"> Ever owned a pair of Air Force 1’s?</label></li>
+                            <li><label><input type="checkbox" value="1"> Named Tiffany, Vivian, Jessica, Jennifer, Jenny, Kevin?</label></li>
+                            <li><label><input type="checkbox" value="1"> Vaped?</label></li>
+                            <li><label><input type="checkbox" value="1"> Attended a rave?</label></li>
+                            <li><label><input type="checkbox" value="1"> Attended a rave with a rave-bae?</label></li>
+                            <li><label><input type="checkbox" value="1"> Hooked up with a rave-bae?</label></li>
+                            <li><label><input type="checkbox" value="1"> Listen to Keshi?</label></li>
+                            <li><label><input type="checkbox" value="1"> Worn Supreme?</label></li>
+                            <li><label><input type="checkbox" value="1"> Watched a JasonTheWeen stream?</label></li>
+                            <li><label><input type="checkbox" value="1"> Watched content from Eric Ou, Kent Bui, Viettrap?</label></li>
+                            <li><label><input type="checkbox" value="1"> Own Essentials or Stussy clothes?</label></li>
+                            <li><label><input type="checkbox" value="1"> Own Van Cleef, Chrome Hearts?</label></li>
+                            <li><label><input type="checkbox" value="1"> Own a pair of cargo pants?</label></li>
+                            <li><label><input type="checkbox" value="1"> Listened to Isoknock, Slander, or Illenium?</label></li>
+                            <li><label><input type="checkbox" value="1"> Drank matcha?</label></li>
+                            <li><label><input type="checkbox" value="1"> Had an anime phase?</label></li>
+                            <li><label><input type="checkbox" value="1"> Listen to Kpop?</label></li>
+                            <li><label><input type="checkbox" value="1"> Been to Tisane?</label></li>
+                            <li><label><input type="checkbox" value="1"> Likes Chaewon?</label></li>
+                            <li><label><input type="checkbox" value="1"> Sonny angel?</label></li>
+                            <li><label><input type="checkbox" value="1"> Smiski?</label></li>
+                            <li><label><input type="checkbox" value="1"> Own a pair of Gentle Monster glasses?</label></li>
+                            <li><label><input type="checkbox" value="1"> Workout?</label></li>
+                            <li><label><input type="checkbox" value="1"> Been on a TikTok interview by ABG/ABB influencer?</label></li>
+                            <li><label><input type="checkbox" value="1"> Business or Econ major?</label></li>
+                            <li><label><input type="checkbox" value="1"> Modded your car?</label></li>
+                            <li><label><input type="checkbox" value="1"> Attracted to Gojo?</label></li>
+                            <li><label><input type="checkbox" value="1"> Consumed Buldak ramen?</label></li>
+                        </ol>
+                        <button type="submit" id="submit-btn">Submit</button>
+                    </form>
+                </div>
+            `;
+            
+            // Add event listener for the form submission
+            document.getElementById('quiz-form').addEventListener('submit', (event) => {
+                event.preventDefault(); // Prevent the form from submitting the default way
+
+                const checkboxes = document.querySelectorAll('#quiz-form input[type="checkbox"]');
+                let score = 0;
+
+                // Calculate the score
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        score += parseInt(checkbox.value);
+                    }
+                });
+
+                // Save the score in localStorage and reload the page
+                localStorage.setItem('score', score);
+                location.reload();
+            });
+        }
+    </script>
+</body>
+</html>
